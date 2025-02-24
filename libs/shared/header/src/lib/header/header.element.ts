@@ -61,7 +61,7 @@ export class HeaderElement extends HTMLElement {
     const githubLink = document.createElement('a');
     const icon = document.createElement('span');
 
-    githubLink.href = 'https://github.com/nrwl/nx-shopss';
+    githubLink.href = 'https://github.com/nrwl/nx-shops';
     icon.classList.add('icon', 'icon-github');
     githubLink.appendChild(icon);
 
