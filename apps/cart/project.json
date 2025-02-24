@@ -108,7 +108,7 @@
       "options": {
         "commands": [
           {
-            "command": "npx ts-node --project tools/tsconfig.tools.json tools/scripts/deploy --siteName nrwl-nx-shopss-cart --outputPath dist/apps/cart"
+            "command": "npx ts-node --project tools/tsconfig.tools.json tools/scripts/deploy --siteName nrwl-nx-shops-cart --outputPath dist/apps/cart"
           }
         ]
       }
