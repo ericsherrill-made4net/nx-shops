@@ -5,7 +5,8 @@ on:
       # Change this if your primary branch is not main
       - main
   pull_request:
-
+env: 
+  NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
 # Needed for nx-set-shas when run on the main branch
 permissions:
   actions: read
@@ -24,7 +25,7 @@ jobs:
           cache: 'npm'
       # This line enables distribution
       # The "--stop-agents-after" is optional, but allows idle agents to shut down once the "e2e-ci" targets have been requested
-      # - run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="e2e-ci"
+      - run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="e2e-ci"
       - run: npm ci
 
       - uses: nrwl/nx-set-shas@v4
