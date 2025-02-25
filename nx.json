@@ -95,7 +95,7 @@
       }
     }
   },
-  "nxCloudAccessToken": "",
+  "nxCloudAccessToken":  "${{ secrets.NX_CLOUD_ACCESS_TOKEN }}",
   "plugins": [
     {
       "plugin": "@nx/cypress/plugin",
